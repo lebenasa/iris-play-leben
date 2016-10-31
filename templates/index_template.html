@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Playing with Iris Go Framework</title>
+
+    <!-- Bootstrap -->
+    <link href="{{.Resources}}/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{.Resources}}/jumbotron.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">{{.Title}}</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Email" required class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" required class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Iris Framework Playground</h1>
+            <p>Simple blogging website built using Iris Framework.</p>
+            <p><a class="btn btn-primary btn-lg" href="javascript:void(0)" onclick="$('#user[name]').focus();" role="button">Get started! &raquo;</a></p>
+          </div>
+          <form accept-charset="UTF-8" action="/join" autocomplete="off" method="post" class="col-md-4 form-join">
+            <input type="text" id="user[name]" placeholder="Pick a username" required class="form-control form-join-control">
+            <input type="email" id="user[email]" placeholder="Email address" required class="form-control form-join-control">
+            <input type="password" id="user[password]" placeholder="Password" required class="form-control form-join-control">
+            <input type="password" id="user[password2]" placeholder="Reenter Password" required class="form-control form-join-control">
+            <button class="btn btn-success btn-block" type="submit">Sign Up</a>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Read blogs</h2>
+          <p>Just like normal blogs, user can share their blog post using human-friendly URL.</p>
+          <p><a class="btn btn-default" href="#" role="button">See it in action! &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Edit post</h2>
+          <p>Although rather plain, user can create a blog post using HTML markup. We'll try to let them use Markdown later.</p>
+          <p><a class="btn btn-default" href="#" role="button">See it in action! &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>That's it for now</h2>
+          <p>Let's take one small step at a time, shall we?</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; 2016 Leben Asa.</p>
+      </footer>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{{.Resources}}/jquery-3.1.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{{.Resources}}/js/bootstrap.min.js"></script>
+    <!-- Handles DOM Events -->
+    <script src="{{.Resources}}/js/join-check.js"</script>
+  </body>
+</html>

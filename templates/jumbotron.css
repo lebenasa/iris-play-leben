@@ -1,0 +1,13 @@
+/* Move down content for fixed navbar */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.form-join {
+    padding-top: 30px;
+}
+
+.form-join-control {
+    margin-bottom: 10px;
+}
