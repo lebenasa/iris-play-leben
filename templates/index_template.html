@@ -46,12 +46,12 @@
             <p>Simple blogging website built using Iris Framework.</p>
             <p><a class="btn btn-primary btn-lg" href="javascript:void(0)" onclick="$('#user[name]').focus();" role="button">Get started! &raquo;</a></p>
           </div>
-          <form accept-charset="UTF-8" action="/join" autocomplete="off" method="post" class="col-md-4 form-join">
+          <form id="form:join" accept-charset="UTF-8" action="/join" autocomplete="off" method="post" class="col-md-4 form-group has-success has-danger form-join">
             <input type="text" id="user[name]" placeholder="Pick a username" required class="form-control form-join-control">
             <input type="email" id="user[email]" placeholder="Email address" required class="form-control form-join-control">
             <input type="password" id="user[password]" placeholder="Password" required class="form-control form-join-control">
             <input type="password" id="user[password2]" placeholder="Reenter Password" required class="form-control form-join-control">
-            <button class="btn btn-success btn-block" type="submit">Sign Up</a>
+            <button class="btn btn-success btn-block" type="submit">Sign Up</button>
           </form>
         </div>
       </div>
@@ -88,6 +88,6 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{{.Resources}}/js/bootstrap.min.js"></script>
     <!-- Handles DOM Events -->
-    <script src="{{.Resources}}/js/join-check.js"</script>
+    <script src="{{.Resources}}/js/join-check.js"></script>
   </body>
 </html>

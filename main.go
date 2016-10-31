@@ -47,9 +47,9 @@ func (a App) checkUsername(ctx *iris.Context) {
     testname := ctx.Param("name")
     for _, i := range a.RegisteredUsers {
         if testname == i.Name {
-            ctx.JSON(iris.StatusOK, map[string]string{"available": "true"})
+            ctx.JSON(iris.StatusOK, map[string]string{"available": "false"})
             return
         }
     }
-    ctx.JSON(iris.StatusOK, map[string]string{"available":"false"})
+    ctx.JSON(iris.StatusOK, map[string]string{"available":"true"})
 }
